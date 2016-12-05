@@ -58,8 +58,8 @@ Otherwise create a CSS file with the contents of `node_modules/react-dates/lib/c
   id="date_input"
   date={this.state.date}
   focused={this.state.focused}
-  onDateChange={(date) => this.setState({ date })}
-  onFocusChange={({ focused }) => this.setState({ focused })}
+  onDateChange={(date) => { this.setState({ date }); }}
+  onFocusChange={({ focused }) => { this.setState({ focused }); }}
 />
 ```
 
